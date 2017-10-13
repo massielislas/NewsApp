@@ -11,7 +11,8 @@
         {title:'Post 5', upvotes:3}
       ];
       $scope.addPost = function() {
-        $scope.posts.push({title:'A new post',upvotes:0});
+        $scope.posts.push({title:$scope.formContent,upvotes:0});
+        $scope.formContent='';
       };
     }
     ]);
